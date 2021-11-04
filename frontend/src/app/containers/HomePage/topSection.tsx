@@ -1,5 +1,8 @@
 import React from "react";
 
+// Components
+import Button from "../../components/Button";
+
 // TWIN in STYLED
 import styled from "styled-components";
 import tw from "twin.macro";
@@ -138,6 +141,14 @@ const StandAloneCar = styled.div`
   }
 `;
 
+const ButtonContainer = styled.div`
+  ${tw`
+    flex
+    flex-wrap
+    mt-6
+  `}
+`;
+
 const TopSection = () => {
   return (
     <TopSectionContainer>
@@ -147,6 +158,10 @@ const TopSection = () => {
           Always choose the best car from our local garages or order it remotely at the best price for you and get the
           best quality cars for as long as you like.
         </Description>
+        <ButtonContainer>
+          <Button text="Book Your Ride" />
+          <Button text="Sell Your Car" theme="filled" />
+        </ButtonContainer>
       </LeftContainer>
 
       <RightContainer>
