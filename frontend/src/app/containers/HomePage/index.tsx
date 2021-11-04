@@ -2,6 +2,7 @@ import React from "react";
 
 // Components
 import NavBar from "../../components/NavBar";
+import TopSection from "./topSection";
 
 // TWIN in STYLED
 import styled from "styled-components";
@@ -22,6 +23,7 @@ const HomePage = () => {
   return (
     <PageContainer>
       <NavBar />
+      <TopSection />
     </PageContainer>
   );
 };
